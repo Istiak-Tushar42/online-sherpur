@@ -1,0 +1,207 @@
+// BREADCRUMBS FOR SUB LINKS
+.sub-links {
+    background: #F6F7FB;
+    position: relative;
+    padding: 30px 0px;
+    .sub-link {
+        z-index: 22;
+        text-align: left;
+        .sub-list {
+            display: inline-block;
+            li {
+                list-style: none;
+                display: inline-block;
+                position: relative;
+                a {
+                    color: $dark;
+                    font-size: 14px;
+                    font-weight: 400;
+                    text-transform: capitalize;
+                    &:hover {
+                        color: $primary;
+                    }
+                    i {
+                        margin: 0px 10px;
+                        font-size: 9px;
+                        font-weight: 600;
+                        letter-spacing: .1rem;
+                    }
+                }
+            }
+            li.active {
+                a {
+                    color: $primary;
+                }
+            }
+        }
+    }
+}
+
+// SHOPPING CART
+.shopping-cart {
+    background: #f6f6f6;
+    padding: 50px 0;
+
+    .product-description {
+        .product-name {
+            a {
+                font-weight: 600;
+                color: #282828;
+                font-weight: 600;
+                font-size: 17px;
+                &:hover {
+                    color: $primary;
+                }
+            }
+        }
+        .product-desc {
+            font-size: 14px;
+            color: #757575;
+        }
+    }
+    .product-price {
+        margin: 1rem 0;
+    }
+    .quantity {
+        .input-group {
+            width: 175px;
+            display: inline-block;
+            position: relative;
+            .button {
+                display: inline-block;
+                position: absolute;
+                top: 0;
+                .btn {
+                    padding: 0;
+                    width: 44px;
+                    height: 47px;
+                    line-height: 50px;
+                    border-radius: 0px;
+                    background: transparent;
+                    color: #282828;
+                    border: none;
+                    font-size: 12px;
+                    &:focus {
+                        border: none;
+                        outline: none;
+                        box-shadow: none;
+                    }
+                    &:hover {
+                        color: $primary;
+                    }
+                }
+            }
+            .button.minus {
+                left: 0;
+                border-radius: 0;
+                overflow: hidden;
+            }
+            .button.plus {
+                right: 0;
+                border-radius: 0;
+                overflow: hidden;
+            }
+            .input-number {
+                border: 1px solid #eceded;
+                width: 100%;
+                text-align: center;
+                height: 47px;
+                border-radius: 0;
+                overflow: hidden;
+                padding: 0px 45px;
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+    }
+
+    .total-amount {
+        margin: 1rem 0;
+    }
+    .action {
+        margin: 1rem 0;
+    }
+
+    .shipping {
+        margin-top: 50px;
+        .shipping-left {
+            .coupon {
+                margin-bottom: 1.25rem;
+                form {
+                    input {
+                        width: 220px;
+                        display: inline-block;
+                        height: 48px;
+                        color: #333;
+                        padding: 0px 20px;
+                        border: none;
+                        box-shadow: 0px 0px 5px #0000000a;
+                        &:focus {
+                            outline: none;
+                            border: none;
+                        }
+                    }
+                    .btn {
+                        display: inline-block;
+                        height: 48px;
+                        margin-left: 4px;
+                        background: transparent;
+                        color: #333;
+                        background: #fff;
+                        box-shadow: 0px 0px 5px #00000012;
+                        &:hover {
+                            color: $primary;
+                        }
+                    }
+                }
+            }
+            .checkbox {
+                label {
+                    margin-top: -10px;
+                }
+                input {
+                    width: 18px;
+                    height: 18px;
+                    line-height: 18px;
+                }
+            }
+        }
+
+        .right {
+            padding-left: 100px;
+            ul {
+                li {
+                    font-size: 15px;
+                    font-weight: 400;
+                    color: #333;
+                    margin-bottom: 12px;
+                    list-style: none;
+                    span {
+                        display: flex;
+                        float: right;
+                    }
+                }
+            }
+
+            .buttons {
+                .btn {
+                    text-align: center;
+                    border-radius: 0;
+                    width: 100%;
+                    margin-top: 10px;
+                    height: 46px;
+                    line-height: 18px;
+                    font-size: 13px;
+                    color: $white2;
+                    background: $dark;
+                    padding: 13px 32px;
+                    transition: .5s;
+                    &:hover {
+                        background: $primary;
+                    }
+                }
+            }
+        }
+    }
+}

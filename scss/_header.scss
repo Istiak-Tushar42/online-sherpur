@@ -1,0 +1,216 @@
+.header {
+
+    .topbar {
+        border-bottom: solid 1px $lightgrey;
+        .top-left {
+            ul.list-main {
+                margin: 0;
+                padding: 0;
+                padding: 10px 0;
+                li {
+                    display: inline;
+                    list-style: none;
+
+                    i {
+                        color: $primary;
+                        font-size: 16px;
+                        margin-right: 2px;
+                        position: relative;
+                        top: 2px;
+                    }
+
+                    a {
+                        font-weight: bold;
+                        font-size: 13px;
+                        padding:0 6px;
+                    }
+                }
+            }
+        }
+
+        // .top-right {}
+    }
+
+    .search-bar {
+        .search-box {
+            margin-top: 2rem;
+            height: 40px;
+            border: none;
+            border-bottom: solid 1px $dark;
+            border-bottom: solid 1px #e84118;
+            border-radius: 30px;
+            position: relative;
+            
+            .search-text {
+                border: none;
+                background: none;
+                outline: none;
+                padding: 0;
+                font-size: 14px;
+                transition: .4s;
+                line-height: 40px;
+                color: $dark;
+                margin-left: 1.5rem;
+                width: 100%;
+            }
+            .search-btn {
+                color: #e84118;
+                width: 35px;
+                height: 35px;
+                border: none;
+                outline: none;
+                border-radius: 50%;
+                background: #2f3640;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+            }
+        }
+    }
+
+    .header-inner {
+        background: $dark;
+        margin-top: 1rem;
+        .cat-nav-head {
+            .menu-area {
+                .nav-inner {
+                    margin: 0;
+                    .nav {
+                        li {
+                            margin-right: 5px;
+                            position: relative;
+                            float: none;
+                            list-style: none;
+                            padding: 0;
+                            margin: 0;
+                            a {
+                                color: $white2;
+                                text-transform: capitalize;
+                                font-size: 15px;
+                                padding: 20px 15px;
+                                font-weight: 500;
+                                display: block;
+                                position: relative;
+                                -webkit-transition: all 0.4s ease;
+                                -moz-transition: all 0.4s ease;
+                                transition: all 0.4s ease;
+                                
+                                &:hover {
+                                    background:#F7941D;
+                                }
+                            }
+                            .dropdown {
+                                background: $white2;
+                                width: 250px;
+                                position: absolute;
+                                top: 100%;
+                                z-index: 999;
+                                -webkit-box-shadow: 0px 3px 5px #3333334d;
+                                -moz-box-shadow: 0px 3px 5px #3333334d;
+                                box-shadow: 0px 3px 5px #3333334d;
+                                transform-origin: 0 0 0;
+                                transform: scaleY(0.2);
+                                -webkit-transition: all 0.3s ease 0s;
+                                -moz-transition: all 0.3s ease 0s;
+                                transition: all 0.3s ease 0s;
+                                opacity: 0;
+                                visibility: hidden;
+                                padding: 10px;
+                                left: 0;
+                                margin: 0;
+                                li {
+                                    margin: 0;
+                                    a {
+                                        font-weight: 400;
+                                        font-size: 14px;
+                                        color: #333;
+                                        padding: 8px 15px;
+                                        background: #fff;
+                                    }
+                                }
+                            }
+
+                            &:hover {
+                                .dropdown {
+                                    opacity: 1;
+                                    visibility: visible;
+                                    transform: translateY(0px);
+                                    li {
+                                        &:hover {
+                                            a {
+                                                background: $primary;
+                                                color: $white;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        li.active {
+                            a {
+                                color: $white2;
+                                background: $primary;
+                            }
+                        }
+                        li.nav-item {
+                            a {
+                                i {
+                                    font-size: 18px;
+                                }
+                            }
+
+                            .single-icon {
+                                color: $white2;
+                                position: relative;
+                                .total-count {
+                                    position: absolute;
+                                    top: 10px;
+                                    right: 5px;
+                                    background: $primary;
+                                    width: 18px;
+                                    height: 18px;
+                                    line-height: 18px;
+                                    text-align: center;
+                                    color: $white2;
+                                    border-radius: 50%;
+                                    font-size: 11px;
+                                }
+                            }
+
+                            .dropdown-item {
+                                color: $dark !important;
+                            }
+                            
+                            &:hover {
+                                a {
+                                    color: $primary !important;
+                                    background: none;
+                                }
+                                .dropdown-item {
+                                    color: $dark !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .sticky {
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: -20px;
+        z-index: 1111;
+        transition: all 1s ease-in-out;
+        background: $white2;
+        box-shadow: 0 3px 20px rgba(black, .2);
+        .navbar-brand {
+            height: 100px;
+        }
+    }
+}

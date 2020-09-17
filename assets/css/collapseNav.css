@@ -1,0 +1,72 @@
+.mobile-nav {
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.mobile-nav .item {
+  border-top: solid 1px #2980b9;
+  overflow: hidden;
+}
+
+.mobile-nav .item .my-btn {
+  display: block;
+  padding: 16px 20px;
+  background: #3498db;
+  color: white;
+  position: relative;
+}
+
+.mobile-nav .item .my-btn::before {
+  content: '';
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  background: #3498db;
+  left: 20px;
+  bottom: -7px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.mobile-nav .item .my-btn i {
+  margin-right: 10px;
+}
+
+.mobile-nav .item .sub-menu {
+  background-color: #f5b223;
+  overflow: hidden;
+  -webkit-transition: max-height .5s;
+  transition: max-height .5s;
+  max-height: 0;
+}
+
+.mobile-nav .item .sub-menu a {
+  display: block;
+  padding: 16px 20px;
+  color: white;
+  font-size: 13px;
+  margin: 4px 0;
+  position: relative;
+}
+
+.mobile-nav .item .sub-menu a::before {
+  content: '';
+  position: absolute;
+  width: 6px;
+  height: 100%;
+  background: #1498db;
+  left: 0;
+  top: 0;
+  -webkit-transition: .5s;
+  transition: .5s;
+  opacity: 0;
+}
+
+.mobile-nav .item .sub-menu a:hover::before {
+  opacity: 1;
+}
+
+.mobile-nav .item:target .sub-menu {
+  max-height: 10rem;
+}

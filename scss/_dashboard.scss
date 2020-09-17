@@ -1,0 +1,78 @@
+.dashboard {
+    padding: 50px;
+    .sidebar {
+        background: $white2;
+        // box-shadow: $box-shadow;
+        height: 100%;
+        width: 100%;
+        .nav {
+            .nav-item {
+                .nav-link {
+                    color: $dark;
+                    font-size: 1rem;
+                    &:hover {
+                        color: $primary;
+                    }
+                }
+                .nav-link.active {
+                    color: $primary;
+                }
+            }
+        }
+    }
+
+    .card {
+        box-shadow: $box-shadow;
+        border: 0;
+    }
+
+    table {
+        thead {
+            tr {
+                th {
+                    border-top: none;
+                }
+            }
+        }
+    }
+
+    .change-password {
+        .btn {
+            margin-top: 1rem;
+            width: 200px;
+            height: 45px;
+            background: $dark;
+            transition: .5s;
+            color: $white2;
+            &:hover {
+                background: $primary;
+            }
+        }
+    }
+
+    label {
+        position: relative;
+        &::after {
+            content: '*';
+            position: absolute;
+            color: #ff0000;
+            margin-left: 3px;
+            font-size: 15px;
+        }
+    }
+}
+
+@media(max-width: 768px) {
+    .sidebar {
+        margin-bottom: 1.2rem;
+        display: flex;
+        justify-content: center;
+        .nav {
+            .nav-item {
+                .nav-link {
+                    font-size: 14px !important;
+                }
+            }
+        }
+    }
+}

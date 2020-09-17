@@ -1,0 +1,211 @@
+.single-view {
+    padding: 2rem;
+
+    .product-image {
+        display: block;
+        max-width: 100%;
+        height: 100%;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    
+    
+    .card {
+        border-radius: 0;
+        height: 100%;
+        .card-body {
+            .quickview-content {
+                padding: 40px 40px;
+                h2 {
+                    font-size: 22px;
+                    font-weight: 600;
+                    margin: 0 0 6px;
+                }
+                .quickview-ratting-review {
+                    display: -webkit-box;
+                    display: -webkit-flex;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-box-align: center;
+                    -webkit-align-items: center;
+                        -ms-flex-align: center;
+                            align-items: center;
+                    .quickview-ratting-wrap {
+                        display: -webkit-box;
+                        display: -webkit-flex;
+                        display: -ms-flexbox;
+                        display: flex;
+                        .quickview-ratting {
+                            i {
+                                color: #d5d6d8;
+                                font-size: 12px;
+                            }
+                            i.yellow {
+                                color: #f5b223;
+                            }
+                        }
+                        a {
+                            color: #262626;
+                            font-size: 12px;
+                            margin-left: 5px;
+                        }
+                    }
+                    .quickview-stock {
+                        margin-left: 24px;
+                        span {
+                            font-size: 12px;
+                            i {
+                                font-size: 16px;
+                                color: #63ab01;
+                                margin-right: 2px;
+                                position: relative;
+                                top: 3px;
+                            }
+                        }
+                    }
+                }
+                h3 {
+                    font-size: 20px;
+                    margin: 12px 0 15px;
+                    font-weight: 600;
+                }
+                .quickview-peragraph {
+                    p {
+                        font-size: 14px;
+                        line-height: 24px;
+                        font-weight: 400;
+                        color: #333;
+                        text-align: justify;
+                    }
+                }
+            
+                .quantity {
+                    .input-group {
+                        width: 151px;
+                        display: inline-block;
+                        .button {
+                            display: inline-block;
+                            position: absolute;
+                            top: 0;
+                            display:inline-block;
+                            .btn {
+                                padding: 0;
+                                width: 35px;
+                                height: 45px;
+                                line-height: 45px;
+                                border-radius: 0px;
+                                background: transparent;
+                                color: #282828;
+                                font-size: 12px;
+                                border: none;
+                                &:hover{
+                                    color:#F7941D;
+                                }
+                            }
+                        }
+                        .input-number {
+                            width: 100%;
+                            text-align: center;
+                            height: 45px;
+                            border-radius: 0px;
+                            overflow: hidden;
+                            padding: 0px 38px;
+                            border: solid 1px #eee;
+                            outline: none;
+                        }
+                        .button.minus{
+                            left:0;
+                            border-radius:0;
+                            overflow:hidden;
+                            border-right: solid 1px #eee;
+                            &:hover {
+                                button {
+                                    background: $primary;
+                                    color: #fff;
+                                }
+                            }
+                        }
+                        .button.plus {
+                            right: 0;
+                            border-radius:0;
+                            overflow:hidden;
+                            border-left: solid 1px #eee;
+                            &:hover {
+                                button {
+                                    background: $primary;
+                                    color: #fff;
+                                }
+                            }
+                        }
+            
+                    }
+                }
+            
+                .add-to-cart {
+                    display:inline-block;
+                    .btn {
+                        height: 45px;
+                        width: auto;
+                        padding: 0 42px;
+                        line-height: 45px;
+                        text-align: center;
+                        text-transform: capitalize;
+                        margin: 1rem 5px 1rem 0;
+                        border-radius: 0px;
+                        background: #333;
+                        color: #fff;
+                        display: inline-block;
+                        font-weight: 500;
+                        &:hover{
+                            color:#fff;
+                            background:#F7941D;
+                        }
+                    }
+                    .btn.min {
+                        padding: 0 20px;
+                        font-size: 17px;
+                        position: relative;
+                        top: 1px;
+                        line-height: 45px;
+                    }
+                }
+            
+                .default-social {
+                    .share-now{
+                        margin-right:12px;
+                        display:inline-block;
+                        font-size:14px;
+                        font-weight:400;
+                    }
+            
+                    ul {
+                        display:inline-block;
+                        li {
+                            margin-right:12px;
+                            display: inline-block;
+                            margin-right: 5px;
+                            &:last-child {
+                                margin-right: 0px;
+                            }
+                            a {
+                                font-size: 16px;
+                                text-align: center;
+                                display: inline-block;
+                                color: #262626;
+                                -webkit-transition: all .5s;
+                                -o-transition: all .5s;
+                                transition: all .5s;
+                                font-size: 14px;
+                                &:hover {
+                                    color: #F7941D;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,361 @@
+// SMART PHONE MEDIA QUERIES
+@media only screen and (max-width: 992px) {
+    // MAIN SLIDER
+    .main-slider {
+        .carousel {
+            height: 300px;
+        }
+    }
+    // RECENT PRODUCTS
+    .recent-products,
+    .popular-products {
+        .box-title {
+            font-size: 1.5rem;
+            margin: 2rem 0;
+        }
+        .single-product {
+            margin-bottom: 30px;
+            .product-img {
+                a {
+                    height: 100%;
+                    .default-img {
+                        height: 100%;
+                    }
+                }
+            }
+            .product-content {
+                margin-top: 10px;
+                h3 {
+                    margin: 0;
+                }
+                .product-price {
+                    margin-top: 2px;
+                    span {
+                        font-size: 13px;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+    }
+
+    .shopping-cart {
+        .shipping {
+            .right {
+                padding-left: 0;
+            }
+        }
+    }
+
+    // 
+    .shop-home-list {
+        .single-list {
+            .content {
+                text-align: center;
+            }
+        }
+    }
+
+    // PRODUCT MODAL
+    .modal {
+        .modal-dialog {
+            margin-bottom: 3rem;
+            width: 100%;
+            padding: 0;
+            margin-top: 0;
+            overflow: hidden;
+            .modal-content {
+                border: 0;
+                .modal-header {
+                    .close {
+                        width: 30px;
+                        height: 30px;
+                        line-height: 30px;
+                        font-size: 12px;
+                        background: #eee;
+                        margin-right: .35rem;
+                        position: absolute;
+                        right: 4px;
+                        top: 4px;
+                    }
+                }
+                .modal-body {
+                    .product-image {
+                        margin: auto;
+                        img {
+                            display: block;
+                        }
+                    }
+                    .quickview-content {
+                        padding: 1.75rem;
+                        h2 {
+                            font-size: 22px;
+                            font-weight: 600;
+                            margin: 0 0 6px;
+                        }
+                        .quickview-ratting-review {
+                            display: block;
+                            .quickview-ratting-wrap {
+                                display: block;
+                                .quickview-ratting {
+                                    i {
+                                        color: #d5d6d8;
+                                        font-size: 12px;
+                                    }
+                                    i.yellow {
+                                        color: #f5b223;
+                                    }
+                                }
+                                a {
+                                    color: #262626;
+                                    font-size: 12px;
+                                }
+                            }
+                            .quickview-stock {
+                                margin-left: 0;
+                                display: block;
+                                span {
+                                    display: block;
+                                    font-size: 12px;
+                                    i {
+                                        font-size: 16px;
+                                        color: #63ab01;
+                                        margin-right: 2px;
+                                        position: relative;
+                                        top: 3px;
+                                    }
+                                }
+                            }
+                        }
+                        h3 {
+                            font-size: 20px;
+                            font-weight: 600;
+                            display: inline-block;
+                        }
+                        .quickview-peragraph {
+                            p {
+                                font-size: 14px;
+                                line-height: 24px;
+                                font-weight: 400;
+                                color: #333;
+                                text-align: justify;
+                                word-wrap: break-word;
+                            }
+                        }
+                    
+                        .quantity {
+                            .input-group {
+                                width: 151px;
+                                display: inline-block;
+                                .button {
+                                    display: inline-block;
+                                    position: absolute;
+                                    top: 0;
+                                    display:inline-block;
+                                    .btn {
+                                        padding: 0;
+                                        width: 35px;
+                                        height: 45px;
+                                        line-height: 45px;
+                                        border-radius: 0px;
+                                        background: transparent;
+                                        color: #282828;
+                                        font-size: 12px;
+                                        border: none;
+                                        &:hover{
+                                            color:#F7941D;
+                                        }
+                                    }
+                                }
+                                .input-number {
+                                    width: 100%;
+                                    text-align: center;
+                                    height: 45px;
+                                    border-radius: 0px;
+                                    overflow: hidden;
+                                    padding: 0px 38px;
+                                    border: solid 1px #eee;
+                                    outline: none;
+                                }
+                                .button.minus{
+                                    left:0;
+                                    border-radius:0;
+                                    overflow:hidden;
+                                    border-right: solid 1px #eee;
+                                    &:hover {
+                                        button {
+                                            background: $primary;
+                                            color: #fff;
+                                        }
+                                    }
+                                }
+                                .button.plus {
+                                    right: 0;
+                                    border-radius:0;
+                                    overflow:hidden;
+                                    border-left: solid 1px #eee;
+                                    &:hover {
+                                        button {
+                                            background: $primary;
+                                            color: #fff;
+                                        }
+                                    }
+                                }
+                    
+                            }
+                        }
+                    
+                        .add-to-cart {
+                            display:inline-block;
+                            .btn {
+                                height: 45px;
+                                width: auto;
+                                padding: 0 42px;
+                                line-height: 45px;
+                                text-align: center;
+                                text-transform: capitalize;
+                                margin: 1rem 5px 1rem 0;
+                                border-radius: 0px;
+                                background: #333;
+                                color: #fff;
+                                display: inline-block;
+                                font-weight: 500;
+                                &:hover{
+                                    color:#fff;
+                                    background:#F7941D;
+                                }
+                            }
+                            .btn.min {
+                                padding: 0 20px;
+                                font-size: 17px;
+                                position: relative;
+                                top: 1px;
+                                line-height: 45px;
+                            }
+                        }
+                    
+                        .default-social {
+                            .share-now{
+                                margin-right:12px;
+                                display:inline-block;
+                                font-size:14px;
+                                font-weight:400;
+                            }
+                    
+                            ul {
+                                display:inline-block;
+                                li {
+                                    margin-right:12px;
+                                    display: inline-block;
+                                    margin-right: 5px;
+                                    &:last-child {
+                                        margin-right: 0px;
+                                    }
+                                    a {
+                                        font-size: 16px;
+                                        text-align: center;
+                                        display: inline-block;
+                                        color: #262626;
+                                        -webkit-transition: all .5s;
+                                        -o-transition: all .5s;
+                                        transition: all .5s;
+                                        font-size: 14px;
+                                        &:hover {
+                                            color: #F7941D;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .footer {
+        padding-top: 10px;
+    }
+
+    .contact {
+        .contact-us {
+            margin-bottom: 1.5rem;
+        }
+    }
+}
+
+// SMALL PHONE MEDIA QUERIES
+@media only screen and (max-width: 480px) {
+    .header {
+        .topbar {
+            .top-left {
+                ul.list-main {
+                    li {
+                        a {
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    .main-slider {
+        .slide {
+            height: 200px;
+            a {
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+
+    .modal {
+        .modal-dialog {
+            width: 100%;
+            .quickview-content {
+                padding: 2rem;
+            }
+            .modal-content {
+                .modal-header {
+                    .close {
+                        position: absolute;
+                        right: 5px;
+                        top: -5px;
+                    }
+                }
+            }
+        }
+    }
+
+    .checkout {
+        padding: 1rem;
+        .checkout-title {
+            font-size: 16px !important;
+        }
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .recent-products {
+        .box-title {
+            font-size: 1.35rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .modal-dialog {
+        width: 100%;
+        max-width: 100%;
+        padding: 35px 0;
+    }
+    .contact {
+        padding: 1.25rem;
+        .contact-us {
+            margin-bottom: 1.5rem;
+        }
+    }
+}
